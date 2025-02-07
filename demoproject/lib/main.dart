@@ -1,4 +1,5 @@
-import 'package:demoproject/answer5.dart';
+
+import 'package:demoproject/AQIpage.dart';
 import 'package:flutter/material.dart';
 
 
@@ -8,7 +9,9 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  
   const MyApp({super.key});
+  
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme:ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true
       ),
-      home :Answer5()
+      home :AQIpage(),
   );
   }
 }
