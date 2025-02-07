@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http; // ✅ เพิ่ม as http
-import 'dart:convert'; // ✅ เพิ่ม json.decode()
+import 'package:http/http.dart' as http; 
+import 'dart:convert'; 
 
 class AQIpage extends StatefulWidget {
   const AQIpage({super.key});
@@ -26,10 +26,10 @@ class _AQIScreenState extends State<AQIpage> {
 
   Future<void> fetchAQIData() async {
     try {
-      final response = await http.get(Uri.parse(apiUrl)); // ✅ ใช้ http.get
+      final response = await http.get(Uri.parse(apiUrl)); 
 
       if (response.statusCode == 200) {
-        final data = json.decode(response.body); // ✅ ใช้ json.decode
+        final data = json.decode(response.body); 
 
         setState(() {
           city = "Bangkok";
